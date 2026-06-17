@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYU University - Student Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <div class="logo-section">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h3>PYU</h3>
+                    <span>UNIVERSITY</span>
+                </div>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item active">
+                    <a href="#"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-user-group"></i> Sinh viên</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-chalkboard"></i> Lớp học</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-calendar-check"></i> Điểm danh</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-chart-line"></i> Báo cáo</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><i class="fa-solid fa-gear"></i> Cài đặt</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Đăng xuất
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h2>Student Dashboard</h2>
+            <div class="header-right">
+                <div class="notification-icon">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="badge"></span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/35" alt="Admin Avatar">
+                    <div class="user-info">
+                        <p>Admin</p>
+                        <span>Quản trị viên <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="overview-title">Tổng quan</h3>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-info">
+                    <p>Tổng sinh viên</p>
+                    <div class="value">1.200</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 12% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                </div>
+            <div class="card">
+                <div class="card-info">
+                    <p>Lớp học</p>
+                    <div class="value">48</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 5% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p>Tỷ lệ chuyên cần</p>
+                    <div class="value">92.5%</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 3% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p>Giảng viên</p>
+                    <div class="value">64</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 8% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-user-tie"></i></div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h3>Danh sách sinh viên</h3>
+                <div class="table-actions">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm sinh viên...">
+                    </div>
+                    <button class="btn btn-filter"><i class="fa-solid fa-filter"></i> Lọc</button>
+                    <button class="btn btn-add"><i class="fa-solid fa-plus"></i> Thêm sinh viên</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;"><input type="checkbox"></th>
+                        <th>MSSV</th>
+                        <th>Họ và tên</th>
+                        <th>Lớp</th>
+                        <th>Email</th>
+                        <th>Điểm TB</th>
+                        <th>Chuyên cần</th>
+                        <th style="text-align: center;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV001</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>CNTT1</td>
+                        <td>nguyenvana@example.com</td>
+                        <td>8.5</td>
+                        <td><span class="attendance-badge high">95%</span></td>
+            <div class="card">
+                <div class="card-info">
+                    <p>Lớp học</p>
+                    <div class="value">48</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 5% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p>Tỷ lệ chuyên cần</p>
+                    <div class="value">92.5%</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 3% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p>Giảng viên</p>
+                    <div class="value">64</div>
+                    <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 8% <span class="trend-sub">so với tháng trước</span></span>
+                </div>
+                <div class="card-icon"><i class="fa-solid fa-user-tie"></i></div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h3>Danh sách sinh viên</h3>
+                <div class="table-actions">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Tìm kiếm sinh viên...">
+                    </div>
+                    <button class="btn btn-filter"><i class="fa-solid fa-filter"></i> Lọc</button>
+                    <button class="btn btn-add"><i class="fa-solid fa-plus"></i> Thêm sinh viên</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 40px;"><input type="checkbox"></th>
+                        <th>MSSV</th>
+                        <th>Họ và tên</th>
+                        <th>Lớp</th>
+                        <th>Email</th>
+                        <th>Điểm TB</th>
+                        <th>Chuyên cần</th>
+                        <th style="text-align: center;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV001</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>CNTT1</td>
+                        <td>nguyenvana@example.com</td>
+                        <td>8.5</td>
+                        <td><span class="attendance-badge high">95%</span></td>
+<td class="action-dot"><i class="fa-solid fa-ellipsis"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV002</td>
+                        <td>Trần Thị B</td>
+                        <td>CNTT2</td>
+                        <td>tranthib@example.com</td>
+                        <td>7.8</td>
+                        <td><span class="attendance-badge high">92%</span></td>
+                        <td class="action-dot"><i class="fa-solid fa-ellipsis"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV003</td>
+                        <td>Lê Văn C</td>
+                        <td>CNTT1</td>
+                        <td>levanc@example.com</td>
+                        <td>8.2</td>
+                        <td><span class="attendance-badge high">90%</span></td>
+                        <td class="action-dot"><i class="fa-solid fa-ellipsis"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV004</td>
+                        <td>Phạm Thị D</td>
+                        <td>CNTT2</td>
+                        <td>phamthid@example.com</td>
+                        <td>7.5</td>
+                        <td><span class="attendance-badge mid">88%</span></td>
+                        <td class="action-dot"><i class="fa-solid fa-ellipsis"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SV005</td>
+                        <td>Hoàng Văn E</td>
+                        <td>CNTT3</td>
+                        <td>hoangvane@example.com</td>
+                        <td>8.9</td>
+                        <td><span class="attendance-badge high">96%</span></td>
+                        <td class="action-dot"><i class="fa-solid fa-ellipsis"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            &copy; 2026 PYU University. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
